@@ -27,7 +27,7 @@ const buttons = document.querySelectorAll('.buttons button');
           const symbolMap = { '÷': '/', '×': '*' };
           let value = symbolMap[button.textContent] || button.textContent;
       
-          // 🔁 Move this to the top so it doesn't get skipped
+        
           if (button.classList.contains('convert')) {
             const evaluated = safeEval(currentInput || '0');
             const currentVal = parseInt(evaluated);
